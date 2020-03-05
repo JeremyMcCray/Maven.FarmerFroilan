@@ -35,6 +35,13 @@ public class Stable implements Storage<Horse>{
             return false;
     }
 
+    public Horse get() {
+        if(stable.size() != 0){
+            return stable.get(0);
+        }else
+            return null;
+    }
+
     public Integer size() {
         return stable.size();
     }

@@ -1,4 +1,9 @@
 package com.zipcodewilmington.froilansfarm.weekdays;
 
-public class Sunday {
+import com.zipcodewilmington.froilansfarm.Farm;
+
+public class Sunday extends DailyRoutines{
+    public Sunday(Farm farm) {
+        super(farm);
+    }
 }

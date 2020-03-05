@@ -1,6 +1,7 @@
 package com.zipcodewilmington.froilansfarm.storagetest;
 
 import com.zipcodewilmington.froilansfarm.animals.Chicken;
+import com.zipcodewilmington.froilansfarm.animals.Horse;
 import com.zipcodewilmington.froilansfarm.storage.ChickenCoop;
 import com.zipcodewilmington.froilansfarm.storage.Stable;
 import org.junit.Before;
@@ -77,5 +78,14 @@ public class ChickenCoopTest {
         Integer actual = testCoop.size();
 
         assertEquals(expected, actual);
+    }
+
+    @Test
+    public void getTest(){
+        testCoop.add(testChicken);
+
+        Chicken actual = testCoop.get();
+
+        assertEquals(testChicken, actual);
     }
 }

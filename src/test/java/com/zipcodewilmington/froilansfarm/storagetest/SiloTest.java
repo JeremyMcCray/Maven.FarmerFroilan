@@ -1,5 +1,6 @@
 package com.zipcodewilmington.froilansfarm.storagetest;
 
+import com.zipcodewilmington.froilansfarm.animals.Horse;
 import com.zipcodewilmington.froilansfarm.food.EarCorn;
 import com.zipcodewilmington.froilansfarm.food.Edible;
 import com.zipcodewilmington.froilansfarm.food.Egg;
@@ -88,4 +89,12 @@ public class SiloTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    public void getTest(){
+        testSilo.add(testCorn);
+
+        Edible actual = testSilo.get();
+
+        assertEquals(testCorn, actual);
+    }
 }

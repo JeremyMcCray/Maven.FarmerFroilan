@@ -6,5 +6,7 @@ public interface Storage <T>{
 
     public Boolean remove(T obj);
 
+    public T get();
+
     public Integer size();
 }

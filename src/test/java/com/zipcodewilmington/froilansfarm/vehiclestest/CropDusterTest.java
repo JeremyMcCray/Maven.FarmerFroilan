@@ -72,7 +72,7 @@ public class CropDusterTest {
         cropDuster.fly();
         cropDuster.operate(farm);
         Assert.assertTrue(cropRow1.getCropFromCropRow(0).getHasBeenFertilized());
-        Assert.assertTrue(farm.getField().amountOfCropRowsInField() == 1);
+        Assert.assertEquals(6, farm.getField().amountOfCropRowsInField());
     }
 
 

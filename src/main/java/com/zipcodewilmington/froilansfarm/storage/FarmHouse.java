@@ -26,12 +26,19 @@ public class FarmHouse implements Storage<Person>{
             return false;
     }
 
-    public Boolean remove(Person peopleToRemove) {
-        if(house.contains(peopleToRemove)){
-            house.remove(peopleToRemove);
+    public Boolean remove(Person personToRemove) {
+        if(house.contains(personToRemove)){
+            house.remove(personToRemove);
             return true;
         }else
             return false;
+    }
+
+    public Person get() {
+        if(house.size() != 0){
+            return house.get(0);
+        }else
+            return null;
     }
 
     public Integer size() {

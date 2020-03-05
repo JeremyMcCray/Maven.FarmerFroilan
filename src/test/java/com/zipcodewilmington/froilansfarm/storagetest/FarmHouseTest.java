@@ -1,5 +1,6 @@
 package com.zipcodewilmington.froilansfarm.storagetest;
 
+import com.zipcodewilmington.froilansfarm.animals.Horse;
 import com.zipcodewilmington.froilansfarm.people.Farmer;
 import com.zipcodewilmington.froilansfarm.people.Person;
 import com.zipcodewilmington.froilansfarm.storage.FarmHouse;
@@ -79,5 +80,14 @@ public class FarmHouseTest {
         Integer actual = testHouse.size();
 
         assertEquals(expected, actual);
+    }
+
+    @Test
+    public void getTest(){
+        testHouse.add(testPerson);
+
+        Person actual = testHouse.get();
+
+        assertEquals(testPerson, actual);
     }
 }

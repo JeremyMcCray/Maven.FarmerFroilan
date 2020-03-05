@@ -35,6 +35,13 @@ public class ChickenCoop implements Storage<Chicken>{
             return false;
     }
 
+    public Chicken get() {
+        if(chickenCoop.size() != 0){
+            return chickenCoop.get(0);
+        }else
+            return null;
+    }
+
     public Integer size() {
         return chickenCoop.size();
     }

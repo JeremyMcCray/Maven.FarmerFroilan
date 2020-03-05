@@ -36,6 +36,13 @@ public class Silo implements Storage<Edible>{
             return false;
     }
 
+    public Edible get() {
+        if(silo.size() != 0){
+            return silo.get(0);
+        }else
+            return null;
+    }
+
     public Integer size() {
         return silo.size();
     }

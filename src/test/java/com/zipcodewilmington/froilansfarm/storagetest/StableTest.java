@@ -77,4 +77,13 @@ public class StableTest {
 
         assertEquals(expected, actual);
     }
+
+    @Test
+    public void getTest(){
+        testStable.add(testHorse);
+
+        Horse actual = testStable.get();
+
+        assertEquals(testHorse, actual);
+    }
 }
